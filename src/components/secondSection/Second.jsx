@@ -20,7 +20,7 @@ const Container = styled.div`
 @media (max-width: 768px) {
     height: auto;
     padding-bottom: 5%;
-    padding: 2%;
+    padding: 5% 5%;
 }
   width: 100%;
   height: 60vh;
@@ -31,17 +31,22 @@ const Container = styled.div`
   gap: 10%;
   h1 {
     @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
+    text-align: left;
 }
     font-size: 4vw;
     width: 60%;
     text-align: center;
+    font-family: 'Kanit', sans-serif;
   }
   p{
     @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.8rem;
+    margin-top: 5%;
     width: 100%;
+    line-height: 40px;
+    text-align: left;
 }
     font-size: 1.8vw;
     line-height: 30px;

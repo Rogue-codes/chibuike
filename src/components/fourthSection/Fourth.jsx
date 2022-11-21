@@ -17,6 +17,8 @@ export default Fourth;
 const Container = styled.div`
     @media (max-width: 768px) {
     flex-direction: column;
+    padding: 5%;
+    height: auto;
 }
   width: 100%;
   height: 80vh;
@@ -27,13 +29,14 @@ const Container = styled.div`
 
   p {
     @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
     font-weight: 800;
 }
     margin: 5%;
     font-size: 3vw;
     width: 40%;
+    font-family: 'Kanit', sans-serif;
   }
 `;
 const Image = styled.div`
