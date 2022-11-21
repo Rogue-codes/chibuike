@@ -48,8 +48,8 @@ function Nav() {
           animate={showWrapper ? "open" : "closed"}
           variants={variants}
         >
-          <Link>Home</Link>
-          <Link>About</Link>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
           <NavButton content="Get Started" type="mobile" />
         </Wrapper>
       )}
@@ -67,6 +67,7 @@ const Container = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 2%;
+  z-index: 999999;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   position: sticky;
@@ -166,6 +167,7 @@ const Name = styled.h1`
     font-size: 2rem;
   }
   font-size: 3vw;
+  font-family: "Kanit", sans-serif;
 `;
 
 const Wrapper = styled(motion.div)`

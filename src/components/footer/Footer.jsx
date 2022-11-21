@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Footer() {
   return (
     <Container>
-      <p>Kathryn McClintock</p>
+      <p>CHIBUIKE DARAOJIMBA</p>
       <List>
         <ul>
           <li>512.818.3572</li>
@@ -20,7 +20,7 @@ function Footer() {
       </List>
 
       <p>
-        Kathryn McClintock is a Greater Austin REALTOR® based in Georgetown,
+        Chibuike Daraojimba is a Greater Austin REALTOR® based in Georgetown,
         Texas. She is a sixth-generation Texan and hopes to make her home, your
         home.
       </p>

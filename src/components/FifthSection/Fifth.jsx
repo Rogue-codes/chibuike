@@ -84,11 +84,11 @@ const Card = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     min-height: auto;
-    margin-top: 5%;
+    margin: 10% 0%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     padding: 5%;
   }
   width: 33%;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   min-height: 50vh;
   padding: 2%;
   display: flex;
