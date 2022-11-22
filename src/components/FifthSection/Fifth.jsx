@@ -3,6 +3,7 @@ import { BsFillCalendar2CheckFill } from "react-icons/bs";
 import { FaClipboardList, FaListOl } from "react-icons/fa";
 import styled from "styled-components";
 import Button from "../../utils/Button";
+import NavButton from "../../utils/NavButton";
 
 function Fifth() {
   return (
@@ -28,7 +29,7 @@ function Fifth() {
         </Card>
       </Mid>
       <Bottom>
-        <Button content="I'M READY" />
+        <Button content="Get Started" />
       </Bottom>
     </Container>
   );

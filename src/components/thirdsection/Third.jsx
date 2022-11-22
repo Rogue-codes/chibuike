@@ -6,31 +6,30 @@ function Third() {
     <Container>
       <Top>
         <h2>Who you work with matters.</h2>
-        <h2>See why homeowners choose Chibuike.</h2>
+        <h2>See why Organizations choose Chibuike.</h2>
       </Top>
       <Bottom>
         <Card>
           <h2>15 Years in Technology</h2>
           <p>
-            Before transitioning into residential real estate, Chibuike had a
-            successful, 15-year career in software engineering and digital
-            product management.
+            Before transitioning into Project management, Chibuike had a
+            successful, 15-year career in Data Analysis and Business
+            development.
           </p>
         </Card>
         <Card>
-          <h2>Better Communication, Faster</h2>
+          <h2>Tech Savy</h2>
           <p>
-            Chibuike holds a Bachelor’s degree in Communication from Trinity
-            University. Her communication style is warm, timely, clear, and
-            concise.
+            Chibuike holds a Bachelor’s degree in Communication Technology
+            Management University of Pretoria. His knowldege in Technology is
+            soo vast and robust
           </p>
         </Card>
         <Card>
           <h2>Unparalleled Negotiation</h2>
           <p>
-            As a certified Real Estate Negotiation Expert (RENE), Chibuike is
-            client-focused. Her mission is to achieve the best possible outcome
-            for her clients, regardless of timeline or price level.
+            As an analyst, Chibuike builds financial models, perform valuations
+            and financial/business analysis, manage client, and stakeholders
           </p>
         </Card>
         <Card>
@@ -103,7 +102,7 @@ const Card = styled.div`
     }
     font-size: 2vw;
     margin: 5% 0%;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
   }
   p {
     @media (max-width: 768px) {

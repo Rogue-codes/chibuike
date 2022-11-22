@@ -7,22 +7,21 @@ function Footer() {
       <p>CHIBUIKE DARAOJIMBA</p>
       <List>
         <ul>
-          <li>512.818.3572</li>
-          <li>kathryn@mcclintockliving.com</li>
+          <li>+27634632178</li>
+          <li><a href="mailTo:chibuikedaraojimba@gmail.com">chibuikedaraojimba@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/chibuikedaraojimba">LinkedIn</a></li>
         </ul>
 
         <ul>
           {" "}
           <li>9600 Great Hills Trail, Suite </li>
           <li>150W</li>
-          <li>Austin, TX 78759</li>
+          <li>Pretoria, South Africa</li>
         </ul>
       </List>
 
       <p>
-        Chibuike Daraojimba is a Greater Austin REALTOR® based in Georgetown,
-        Texas. She is a sixth-generation Texan and hopes to make her home, your
-        home.
+        Chibuike Daraojimba is a Greater Project Manager and a Business Analyst® based in Pretoria, South Africa.
       </p>
     </Container>
   );
@@ -63,6 +62,10 @@ const List = styled.div`
         }
         font-size: 1.4vw;
         color: #fff;
+        a{
+          color: white;
+          text-decoration: none;
+        }
     }
   }
 `;

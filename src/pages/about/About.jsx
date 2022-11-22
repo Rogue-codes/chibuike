@@ -10,17 +10,16 @@ function About() {
         <Text>
           <p>MEET</p>
           <h1>CHIBUIKE DARAOJIMBA</h1>
-          <span>Texas REALTOR® | License #788300 512-818-3572</span>
-          <a href="mailto:Chibuike@mcclintockliving.com">
-            Chibuike@mcclintockliving.com
+          <span>Project Manager, Data Scientist® | +27634632178</span>
+          <a href="mailto:chibuikedaraojimba@gmail.com">
+            chibuikedaraojimba@gmail.com
           </a>
           <hr />
           <p className="about">
-            CHIBUIKE DARAOJIMBA came to residential real estate through a desire
-            to unify her personal and professional passions while providing
-            value and authenticity to her local community of Georgetown, Texas.
-            Before McClintock Living, Chibuike had a successful career in
-            software engineering and technical product management.
+            Chibuike is a project manager with vast experience in a corporate
+            finance advisory services, management consulting and investment
+            management company whose portfolio involves numerous projects in the
+            mining, technology, telecommunications, financial services sectors.
           </p>
         </Text>
         <Picture>
@@ -31,18 +30,21 @@ function About() {
       <Bottom>
         <Left>
           <p className="top">
-            "Residential real estate was always something I gravitated
-            towards—whether through personal home renovations, consumption of
-            industry-related content, or finding daily delight in monitoring
-            market inventory. This profession is part art, part science, and
-            highly relational—the key reasons I’m a REALTOR®."
+            "As an analyst, my job responsibilities are building financial
+            models, performing valuations and financial/business analysis,
+            managing client relationships, stakeholders management and
+            engagements, compiling management reports, investment teasers,
+            pitchbooks, information memorandum, performing due diligence and
+            conducting business development/strategy for businesses and
+            corporations."
           </p>
 
           <p className="bottom">
-            Her combined background in design, technology, and management allow
-            her to support and guide clients with an extraordinary level of
-            service. "I want to help my clients win—as buyers or sellers, in
-            negotiation, and ultimately, in their lives."
+            With areas of knowledge technology management, project management,
+            innovation management, engineering management, corporate financial
+            advisory, business analysis, data analysis, business intelligence,
+            financial management, human resources management, strategic
+            management, entrepreneurship etc
           </p>
         </Left>
         <Right>
@@ -145,7 +147,7 @@ const Bottom = styled.div`
     height: auto;
   }
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
 `;
 const Left = styled.div`
@@ -154,7 +156,7 @@ const Left = styled.div`
     width: 100%;
   }
   width: 50%;
-  height: 100vh;
+  height: auto;
   padding: 2%;
   display: flex;
   flex-direction: column;

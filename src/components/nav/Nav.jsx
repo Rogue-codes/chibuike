@@ -27,7 +27,7 @@ function Nav() {
 
       <Name>CHIBUIKE DARAOJIMBA</Name>
 
-      <NavButton content="Get Started" />
+      <NavButton content="Download Resume" />
 
       <div
         className={
@@ -50,7 +50,7 @@ function Nav() {
         >
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
-          <NavButton content="Get Started" type="mobile" />
+          <NavButton content="RESUME" type="mobile" />
         </Wrapper>
       )}
     </Container>

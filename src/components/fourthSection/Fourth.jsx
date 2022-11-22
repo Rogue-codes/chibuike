@@ -4,7 +4,7 @@ import img from "../../assets/ch1.jpeg"
 function Fourth() {
   return (
     <Container>
-      <p>It’s not just about a house. It’s about you.</p>
+      <p>Let me help you manage your projects.</p>
       <Image>
         <img src={img} alt="" />
       </Image>

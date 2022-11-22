@@ -4,11 +4,12 @@ import styled from "styled-components";
 function Second() {
   return (
     <Container>
-      <h1>You deserve a seamless real estate experience, start to sold.</h1>
+      <h1>You deserve a seamless project management experience.</h1>
       <p>
-        Buying or selling a home is often the biggest emotional and financial
-        decision you'll ever make. Choosing an exceptional REALTOR® is an
-        important first step.
+        I am currently working in a corporate finance advisory services,
+        management consulting and investment management company whose portfolio
+        involves numerous projects in the mining, technology,
+        telecommunications, financial services sectors
       </p>
     </Container>
   );
@@ -17,11 +18,11 @@ function Second() {
 export default Second;
 
 const Container = styled.div`
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     height: auto;
     padding-bottom: 5%;
     padding: 5% 5%;
-}
+  }
   width: 100%;
   height: 60vh;
   display: flex;
@@ -31,23 +32,23 @@ const Container = styled.div`
   gap: 10%;
   h1 {
     @media (max-width: 768px) {
-    font-size: 2rem;
-    width: 100%;
-    text-align: left;
-}
+      font-size: 2rem;
+      width: 100%;
+      text-align: left;
+    }
     font-size: 4vw;
     width: 60%;
     text-align: center;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
   }
-  p{
+  p {
     @media (max-width: 768px) {
-    font-size: 1.8rem;
-    margin-top: 5%;
-    width: 100%;
-    line-height: 40px;
-    text-align: left;
-}
+      font-size: 1.8rem;
+      margin-top: 5%;
+      width: 100%;
+      line-height: 40px;
+      text-align: left;
+    }
     font-size: 1.8vw;
     line-height: 30px;
     width: 80%;
