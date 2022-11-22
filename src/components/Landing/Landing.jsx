@@ -20,6 +20,8 @@ function Landing() {
                 1000,
                 "I.T Analyst",
                 1000,
+                "Business Analyst",
+                1000,
                 "Data Scientist",
                 1000,
                 "I.T Support Consultant",
