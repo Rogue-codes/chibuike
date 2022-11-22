@@ -63,7 +63,7 @@ const Top = styled.div`
   gap: 5%;
   h2 {
     @media (max-width: 768px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
       text-align: center;
     }
     font-size: 3vw;
