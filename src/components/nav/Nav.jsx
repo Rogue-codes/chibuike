@@ -21,8 +21,8 @@ function Nav() {
   return (
     <Container>
       <Links>
-        <Link>Home</Link>
-        <Link>About</Link>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
       </Links>
 
       <Name>CHIBUIKE DARAOJIMBA</Name>
