@@ -66,7 +66,7 @@ const Container = styled(motion.div)`
   }
   p {
     @media (max-width: 768px) {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       margin-top: 5%;
       width: 100%;
       line-height: 40px;
