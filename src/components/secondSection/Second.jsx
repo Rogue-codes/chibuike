@@ -1,23 +1,46 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
 function Second() {
+  const variants = {
+    hide: { opacity: 0, x: "-100%" },
+    show: { opacity: 1, x: "0%" },
+    hide2: { opacity: 0, x: "100%" },
+    show2: { opacity: 1, x: "0%" },
+  };
   return (
     <Container>
-      <h1>You deserve a seamless project management experience.</h1>
-      <p>
+      <motion.h1
+        whileInView="visible"
+        viewport={{ once: true }}
+        initial="hide2"
+        animate="show2"
+        transition={{ duration: 1, delay: 1 }}
+        variants={variants}
+      >
+        You deserve a seamless project management experience.
+      </motion.h1>
+      <motion.p
+        whileInView="visible"
+        viewport={{ once: true }}
+        initial="hide"
+        animate="show"
+        transition={{ duration: 1, delay: 1 }}
+        variants={variants}
+      >
         I am currently working in a corporate finance advisory services,
         management consulting and investment management company whose portfolio
         involves numerous projects in the mining, technology,
         telecommunications, financial services sectors
-      </p>
+      </motion.p>
     </Container>
   );
 }
 
 export default Second;
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   @media (max-width: 768px) {
     height: auto;
     padding-bottom: 5%;

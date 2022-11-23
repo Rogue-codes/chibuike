@@ -1,15 +1,39 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from "react";
+import styled from "styled-components";
 import Button from "../../utils/Button";
 import img from "../../assets/Chibuike.jpg";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 function Landing() {
+  const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
+  const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const variants = {
+    show: { opacity: 1, y:"0%" },
+    hide: { opacity: 0, y:"-10%" },
+    transition: { duration: 1, delay: 0.5 },
+  };
   return (
     <Container>
-              <Picture>
-        <img src={img} alt="" />
+      <Picture
+        initial={false}
+        animate={
+          isLoaded
+            ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+            : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+        }
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
+        <img src={img} alt="" onLoad={() => setIsLoaded(true)} />
       </Picture>
-      <Desc>
+      <Desc
+        variants={variants}
+        initial="hide"
+        animate="show"
+        transition={{ duration: 1 }}
+      >
         <div className="content">
           <p>Hi I'm Chibuike, a certified</p>
           <h1>
@@ -40,25 +64,25 @@ function Landing() {
         </div>
       </Desc>
     </Container>
-  )
+  );
 }
 
-export default Landing
+export default Landing;
 const Container = styled.div`
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     padding: 5%;
-}
+  }
   width: 100%;
   min-height: 100vh;
   display: flex;
 `;
-const Picture = styled.div`
-@media (max-width: 768px) {
+const Picture = styled(motion.div)`
+  @media (max-width: 768px) {
     width: 100%;
     height: 50vh;
     margin-bottom: 15%;
-}
+  }
   width: 50%;
   height: 100vh;
   img {
@@ -67,12 +91,12 @@ const Picture = styled.div`
     object-fit: cover;
   }
 `;
-const Desc = styled.div`
-@media (max-width: 768px) {
+const Desc = styled(motion.div)`
+  @media (max-width: 768px) {
     width: 100%;
     padding-top: 15%;
     height: auto;
-}
+  }
   width: 50%;
   height: 100vh;
   background: #ede9e2;
@@ -81,8 +105,8 @@ const Desc = styled.div`
   align-items: center;
   .content {
     @media (max-width: 768px) {
-    height: auto;
-}
+      height: auto;
+    }
     width: 90%;
     height: 60%;
     display: flex;
@@ -90,24 +114,24 @@ const Desc = styled.div`
     justify-content: center;
     gap: 8%;
     h1 {
-        @media (max-width: 768px) {
-    font-size: 1.3rem;
-    margin-bottom: 15%;
-}
+      @media (max-width: 768px) {
+        font-size: 1.3rem;
+        margin-bottom: 15%;
+      }
       font-size: 2vw;
-      font-family: 'Merriweather', serif;
+      font-family: "Merriweather", serif;
     }
     p {
-        @media (max-width: 768px) {
-    font-size: 1.3rem;
-}
+      @media (max-width: 768px) {
+        font-size: 1.3rem;
+      }
       font-size: 2vw;
       font-weight: 600;
     }
     .button {
-        @media (max-width: 768px) {
-    flex-direction: column;
-}
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
       width: 100%;
       display: flex;
       justify-content: flex-start;

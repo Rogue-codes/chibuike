@@ -1,15 +1,34 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
 function Third() {
+  const scrollRef = useRef(null);
+  const variants = {
+    hide: { opacity: 0, x: "-100%" },
+  };
   return (
     <Container>
-      <Top>
+      <Top
+        viewport={{ once: true }}
+        initial="hide"
+        transition={{ duration: 1, delay: 1 }}
+        variants={variants}
+        whileInView={{ opacity: 1, x: "0%" }}
+        ref={scrollRef}
+      >
         <h2>Who you work with matters.</h2>
         <h2>See why Organizations choose Chibuike.</h2>
       </Top>
       <Bottom>
-        <Card>
+        <Card
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1, delay: 1.5 }}
+          variants={variants}
+          whileInView={{ opacity: 1 }}
+          ref={scrollRef}
+        >
           <h2>15 Years in Technology</h2>
           <p>
             Before transitioning into Project management, Chibuike had a
@@ -17,7 +36,14 @@ function Third() {
             development.
           </p>
         </Card>
-        <Card>
+        <Card
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1, delay: 2 }}
+          variants={variants}
+          whileInView={{ opacity: 1 }}
+          ref={scrollRef}
+        >
           <h2>Tech Savy</h2>
           <p>
             Chibuike holds a Bachelor’s degree in Communication Technology
@@ -25,14 +51,28 @@ function Third() {
             soo vast and robust
           </p>
         </Card>
-        <Card>
+        <Card
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1, delay: 2.5 }}
+          variants={variants}
+          whileInView={{ opacity: 1 }}
+          ref={scrollRef}
+        >
           <h2>Unparalleled Negotiation</h2>
           <p>
             As an analyst, Chibuike builds financial models, perform valuations
             and financial/business analysis, manage client, and stakeholders
           </p>
         </Card>
-        <Card>
+        <Card
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+          variants={variants}
+          whileInView={{ opacity: 1 }}
+          ref={scrollRef}
+        >
           <h2>Complimentary Home Staging</h2>
           <p>
             With an accreditation in professional home staging (ASP®), Chibuike
@@ -53,7 +93,7 @@ const Container = styled.div`
   background: #2c2c2c;
   padding: 2%;
 `;
-const Top = styled.div`
+const Top = styled(motion.div)`
   width: 100%;
   min-height: 40vh;
   display: flex;
@@ -85,7 +125,7 @@ const Bottom = styled.div`
   justify-content: space-between;
   padding: 2%;
 `;
-const Card = styled.div`
+const Card = styled(motion.div)`
   @media (max-width: 768px) {
     width: 100%;
     padding: 5%;
