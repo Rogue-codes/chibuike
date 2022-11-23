@@ -29,8 +29,8 @@ function Second() {
         transition={{ duration: 1, delay: 1 }}
         variants={variants}
       >
-        I am currently working in a corporate finance advisory services,
-        management consulting and investment management company whose portfolio
+        Hi I'm Chibuike,  certified project manager with experience in working in a corporate finance advisory services,
+        management and investment management organization. My portfolio
         involves numerous projects in the mining, technology,
         telecommunications, financial services sectors
       </motion.p>
