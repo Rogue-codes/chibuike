@@ -48,7 +48,7 @@ function Landing() {
                 1000,
                 "Data Scientist",
                 1000,
-                "I.T Support Consultant",
+                "I.T Specialist",
                 1000,
               ]}
               speed={50} // Custom Speed from 1-99 - Default Speed: 40
@@ -115,7 +115,7 @@ const Desc = styled(motion.div)`
     gap: 8%;
     h1 {
       @media (max-width: 768px) {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-bottom: 15%;
       }
       font-size: 2vw;

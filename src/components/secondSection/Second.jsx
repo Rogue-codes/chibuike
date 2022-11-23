@@ -29,7 +29,7 @@ function Second() {
         transition={{ duration: 1, delay: 1 }}
         variants={variants}
       >
-        Hi I'm Chibuike,  certified project manager with experience in working in a corporate finance advisory services,
+        Hi I'm Chibuike, a certified project manager with vast experience in working in a corporate finance advisory services,
         management and investment management organization. My portfolio
         involves numerous projects in the mining, technology,
         telecommunications, financial services sectors
@@ -55,7 +55,7 @@ const Container = styled(motion.div)`
   gap: 10%;
   h1 {
     @media (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
       width: 100%;
       text-align: left;
     }
